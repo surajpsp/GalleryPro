@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/iconColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="Enter Credit Card Details"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cardNumber"
+        style="@style/BoxInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView35"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Card Number"
+        android:textColor="@color/black2"
+        app:startIconDrawable="@drawable/card_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cardNumberEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        style="@style/BoxInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardNumber"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Name"
+        android:textColor="@color/black2"
+        app:startIconDrawable="@drawable/person_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/linearcvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/expiryData"
+            style="@style/BoxInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Expiry Date"
+            android:textColor="@color/black2"
+            app:startIconDrawable="@drawable/date_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/expiryEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="date" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cvv"
+            style="@style/BoxInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:hint="CVV"
+            android:textColor="@color/black2"
+            app:startIconDrawable="@drawable/cvv_icon">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/cvvEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/acceptCardBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/linearcvv"
+        android:layout_marginTop="12dp"
+        android:background="@color/black3"
+        android:gravity="center"
+        android:text="Accept"
+        android:textColor="@color/white"
+        tools:ignore="ContentDescription" />
+
+
+</RelativeLayout>

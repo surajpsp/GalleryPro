@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black2"
+    tools:context=".view.ChatDoor">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Chat Room id"
+        android:textColor="@color/iconColor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/ChatIdTxt"
+        app:layout_constraintStart_toStartOf="@+id/ChatIdTxt"
+        app:layout_constraintTop_toBottomOf="@+id/ChatIdTxt" />
+
+    <TextView
+        android:id="@+id/ChatIdTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="RONI123"
+        android:textColor="@color/iconColor"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ShareBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_button"
+        android:padding="12dp"
+        android:src="@drawable/share_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/joinChat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/joinChat"
+        app:layout_constraintTop_toTopOf="@+id/joinChat"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Share Chat Id"
+        android:textColor="@color/iconColor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/ShareBtn"
+        app:layout_constraintStart_toStartOf="@+id/ShareBtn"
+        app:layout_constraintTop_toBottomOf="@+id/ShareBtn" />
+
+    <ImageView
+        android:id="@+id/joinChat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/round_button"
+        android:padding="12dp"
+        android:src="@drawable/chat_icon"
+        android:tint="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/ShareBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Join Chat Room"
+        android:textColor="@color/iconColor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/joinChat"
+        app:layout_constraintStart_toStartOf="@+id/joinChat"
+        app:layout_constraintTop_toBottomOf="@+id/joinChat" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="@drawable/background_design"
+        android:paddingStart="8dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="2dp"
+        android:text="Chat Request"
+        android:textColor="@color/iconColor"
+        app:layout_constraintBottom_toTopOf="@+id/chatRequestRec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/chatRequestRec"
+        app:layout_constraintTop_toTopOf="@+id/chatRequestRec" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRequestRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:paddingTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/chat_request_lay" />
+
+    <ProgressBar
+        android:id="@+id/progressDoorBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "299575117828",
+    "project_id": "sailentdev",
+    "storage_bucket": "sailentdev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299575117828:android:6c6cd25e5e86d4c3a74d51",
+        "android_client_info": {
+          "package_name": "com.example.gallerypro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299575117828-k86lcusqn3cgtqdet1ajdchgrokn8r65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gallerypro",
+            "certificate_hash": "da99e363318594bde01f97511f096f75d5ea78be"
+          }
+        },
+        {
+          "client_id": "299575117828-jp6sdeecmls2smfdhqckd7dq5mjfr7cj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNlqAhIhV588_9wJKvdl3loJi-lViW9us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299575117828-jp6sdeecmls2smfdhqckd7dq5mjfr7cj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
